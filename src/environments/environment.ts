@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyAD2oNhGCJh1TiP828u8WYMJWnXZYQq3Ms",
+    authDomain: "game-of-thrones-a427b.firebaseapp.com",
+    databaseURL: "https://game-of-thrones-a427b.firebaseio.com",
+    projectId: "game-of-thrones-a427b",
+    storageBucket: "game-of-thrones-a427b.appspot.com",
+    messagingSenderId: "1081416562357"
+  }
 };
 
 /*
