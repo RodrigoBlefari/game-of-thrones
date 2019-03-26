@@ -15,13 +15,13 @@ import { MatButtonModule,
          MatInputModule,
          MatListModule,
          MatSnackBarModule,
-         MatDialog,
          MatTableModule,
          MatPaginator,
          MatDialogModule,
          MatSelectModule,
          MatTooltipModule,
-         MatSlideToggleModule
+         MatSlideToggleModule,
+         MatPaginatorModule
 
         } from "@angular/material";
 
@@ -44,9 +44,8 @@ import { AppRoutingModule } from './app-routing.module';
     MatInputModule,
     MatListModule,
     MatSnackBarModule,
-    MatDialog,
     MatTableModule,
-    MatPaginator,
+    MatPaginatorModule,
     MatDialogModule,
     MatSelectModule,
     MatTooltipModule,
