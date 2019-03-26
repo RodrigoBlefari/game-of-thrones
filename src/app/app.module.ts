@@ -9,6 +9,9 @@ import { AngularFireModule } from "angularfire2";
 import { AngularFireAuthModule } from "angularfire2/auth";
 import { AngularFirestoreModule } from "angularfire2/firestore";
 
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { MatButtonModule, MatIconModule } from "@angular/material";
+
 @NgModule({
   declarations: [
     AppComponent
@@ -18,7 +21,10 @@ import { AngularFirestoreModule } from "angularfire2/firestore";
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
