@@ -1,2 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 @import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+.mat-form-field-appearance-legacy .mat-form-field-label {
+    color: white !important;
+}
+.mat-form-field-flex{
+    border-bottom: 1px solid white;
+}
+
+.input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:-internal-autofill-previewed, textarea:-internal-autofill-selected, select:-internal-autofill-previewed, select:-internal-autofill-selected {
+    background-color: black !important;
+    background-image: none !important;
+    color: rgb(0, 0, 0) !important;
+}
+.mat-form-field-infix {
+    width: 330px !important;
+}
