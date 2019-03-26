@@ -12,9 +12,12 @@ import { AngularFirestoreModule } from "angularfire2/firestore";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatButtonModule, MatIconModule } from "@angular/material";
 
+import { LoginComponent } from './components';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
