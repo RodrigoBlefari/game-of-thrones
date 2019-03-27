@@ -2,7 +2,9 @@
 @import "@angular/material/prebuilt-themes/indigo-pink.css";
 
 .mat-form-field-appearance-legacy .mat-form-field-label {
-    color: white !important;
+    background: -webkit-linear-gradient(#81bae6, #c97d3d) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
 }
 .mat-form-field-flex{
     border-bottom: 1px solid white;
@@ -14,5 +16,22 @@
     color: rgb(0, 0, 0) !important;
 }
 .mat-form-field-infix {
+    margin-bottom: 1px;
     width: 330px !important;
+    border: 1px solid white;
+    border-radius: 7%;
+}
+.mat-list-item-content{
+    flex-direction: column !important;
+}
+.mat-raised-button[disabled][disabled] {
+    background-color: #4267b2 !important;
+}
+.mat-raised-button{
+    width: 100%;
+    color: white;
+}
+.mat-input-element{
+    color: white !important;
+
 }
