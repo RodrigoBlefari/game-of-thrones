@@ -25,12 +25,14 @@ import { MatButtonModule,
 
         } from "@angular/material";
 
-import { LoginComponent } from './components';
+import { LoginComponent,PreJogoComponent } from './components';
 import { AppRoutingModule } from './app-routing.module';
+
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    PreJogoComponent
   ],
   imports: [
     BrowserModule,

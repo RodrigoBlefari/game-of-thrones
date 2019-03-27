@@ -1,10 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 @import "@angular/material/prebuilt-themes/indigo-pink.css";
-
+body, html{
+    margin: 0px !important;
+    width: 100% !important;
+    height: 100% !important;
+}
 .mat-form-field-appearance-legacy .mat-form-field-label {
-    background: -webkit-linear-gradient(#81bae6, #c97d3d) !important;
+    background: -webkit-linear-gradient(#ceedfc, #fc830b) !important;
     -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
+    -webkit-text-fill-color: #ffffff00 !important;
+    font-weight: 700;
+    font-size: 19px;
+    padding-left: 3px;
 }
 .mat-form-field-flex{
     border-bottom: 1px solid white;
@@ -17,7 +24,7 @@
 }
 .mat-form-field-infix {
     margin-bottom: 1px;
-    width: 330px !important;
+    width: 100% !important;
     border: 1px solid white;
     border-radius: 7%;
 }
@@ -35,3 +42,26 @@
     color: white !important;
 
 }
+@-webkit-keyframes autofill {
+    to {
+        color: #666;
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-name: autofill !important;
+    -webkit-animation-fill-mode: both !important;
+}
+.cadastrar{
+    color: white !important;
+}
+
+mat-form-field{
+    width: 100%;
+}
+
+mat-list-item{
+    height: 55px !important;
+}
+
