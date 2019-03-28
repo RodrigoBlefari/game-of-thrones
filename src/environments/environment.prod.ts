@@ -7,5 +7,6 @@ export const environment = {
     projectId: "game-of-thrones-a427b",
     storageBucket: "game-of-thrones-a427b.appspot.com",
     messagingSenderId: "1081416562357"
-  }
+  },
+  adminEmail:"rodrigo.blefari@gmail.com"
 };
