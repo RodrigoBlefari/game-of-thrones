@@ -25,7 +25,7 @@ import { MatButtonModule,
 
         } from "@angular/material";
 
-import { LoginComponent,PreJogoComponent ,AdminComponent, PerguntaFormDialogComponent } from './components';
+import { LoginComponent,PreJogoComponent ,AdminComponent, PerguntaFormDialogComponent, ConfirmarRemoverDialogComponent } from './components';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -34,7 +34,8 @@ import { AppRoutingModule } from './app-routing.module';
     LoginComponent,
     PreJogoComponent,
     AdminComponent,
-    PerguntaFormDialogComponent
+    PerguntaFormDialogComponent,
+    ConfirmarRemoverDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +59,8 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   providers: [],
   entryComponents: [
-    PerguntaFormDialogComponent
+    PerguntaFormDialogComponent,
+    ConfirmarRemoverDialogComponent
   ]
 ,  bootstrap: [AppComponent]
 })
