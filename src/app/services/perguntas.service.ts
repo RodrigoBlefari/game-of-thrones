@@ -27,6 +27,6 @@ export class PerguntasService {
       const pergunta = objPergunta.payload.doc.data() as Pergunta;
       pergunta.id = objPergunta.payload.doc.id;
       return pergunta;
-    });e
+    });
   }
 }

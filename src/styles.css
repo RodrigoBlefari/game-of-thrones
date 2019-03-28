@@ -5,7 +5,7 @@ body, html{
     width: 100% !important;
     height: 100% !important;
 }
-.mat-form-field-appearance-legacy .mat-form-field-label {
+app-login .mat-form-field-appearance-legacy .mat-form-field-label {
     background: -webkit-linear-gradient(#ceedfc, #fc830b) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: #ffffff00 !important;
@@ -13,32 +13,32 @@ body, html{
     font-size: 19px;
     padding-left: 3px;
 }
-.mat-form-field-flex{
+app-login .mat-form-field-flex{
     border-bottom: 1px solid white;
 }
 
-.input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:-internal-autofill-previewed, textarea:-internal-autofill-selected, select:-internal-autofill-previewed, select:-internal-autofill-selected {
+app-login .input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:-internal-autofill-previewed, textarea:-internal-autofill-selected, select:-internal-autofill-previewed, select:-internal-autofill-selected {
     background-color: black !important;
     background-image: none !important;
     color: rgb(0, 0, 0) !important;
 }
-.mat-form-field-infix {
+app-login .mat-form-field-infix {
     margin-bottom: 1px;
     width: 100% !important;
     border: 1px solid white;
     border-radius: 7%;
 }
-.mat-list-item-content{
+app-login .mat-list-item-content{
     flex-direction: column !important;
 }
-.mat-raised-button[disabled][disabled] {
+app-login .mat-raised-button[disabled][disabled] {
     background-color: #4267b2 !important;
 }
-.mat-raised-button{
+app-login .mat-raised-button{
     width: 100%;
     color: white;
 }
-.mat-input-element{
+app-login .mat-input-element{
     color: white !important;
 
 }
@@ -53,15 +53,15 @@ input:-webkit-autofill {
     -webkit-animation-name: autofill !important;
     -webkit-animation-fill-mode: both !important;
 }
-.cadastrar{
+app-login .cadastrar{
     color: white !important;
 }
 
-mat-form-field{
+app-login mat-form-field{
     width: 100%;
 }
 
-mat-list-item{
+app-login mat-list-item{
     height: 55px !important;
 }
 
