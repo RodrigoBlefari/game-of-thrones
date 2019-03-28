@@ -60,16 +60,16 @@ export class PerguntasService {
         'Erro', this.SNACKBAR_DURATION));
   }
 
-//   remover(perguntaId: string) {
-//     this.afs.doc<Pergunta>(`${this.PERGUNTAS_COLLECTION}/${perguntaId}`)
-//       .delete()
-//       .then(res => this.snackBar.open(
-//         'Pergunta removida com sucesso!', 
-//         'OK', this.SNACKBAR_DURATION))
-//       .catch(err => this.snackBar.open(
-//         'Erro ao excluir pergunta.', 
-//         'Erro', this.SNACKBAR_DURATION));
-//   }
+  remover(perguntaId: string) {
+    this.afs.doc<Pergunta>(`${this.PERGUNTAS_COLLECTION}/${perguntaId}`)
+      .delete()
+      .then(res => this.snackBar.open(
+        'Pergunta removida com sucesso!', 
+        'OK', this.SNACKBAR_DURATION))
+      .catch(err => this.snackBar.open(
+        'Erro ao excluir pergunta.', 
+        'Erro', this.SNACKBAR_DURATION));
+  }
 
 //   restaurarPerguntas() {
 //     this.removerTodasPerguntas()

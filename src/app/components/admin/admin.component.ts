@@ -10,7 +10,7 @@ import { PerguntasService} from '../../services';
 import { Pergunta } from '../../models';
 import { 
   PerguntaFormDialogComponent, 
-  // ConfirmarRemoverDialogComponent,
+  ConfirmarRemoverDialogComponent,
   // ConfirmarRestauracaoDialogComponent,
   // JogosFormDialogComponent
 } from './dialogs';
@@ -79,18 +79,18 @@ export class AdminComponent implements OnInit {
       });
   }
 
-  // remover($event: any, perguntaId: string) {
-  //   $event.preventDefault();
-  //   this.dialog.open(
-  //     ConfirmarRemoverDialogComponent, 
-  //     { data: { perguntaId: perguntaId } }
-  //   )
-  //   .afterClosed().subscribe(data => {
-  //     if (data) {
-  //       this.perguntasService.remover(data.perguntaId);
-  //     }
-  //   });
-  // }
+  remover($event: any, perguntaId: string) {
+    $event.preventDefault();
+    this.dialog.open(
+      ConfirmarRemoverDialogComponent, 
+      { data: { perguntaId: perguntaId } }
+    )
+    .afterClosed().subscribe(data => {
+      if (data) {
+        this.perguntasService.remover(data.perguntaId);
+      }
+    });
+  }
 
   // confirmarRestauracaoDados() {
   //   this.dialog
