@@ -65,19 +65,19 @@ export class AdminComponent implements OnInit {
       });
   }
 
-  // atualizar($event: any, pergunta: Pergunta) {
-  //   $event.preventDefault();
-  //   this.dialog
-  //     .open(
-  //       PerguntaFormDialogComponent, 
-  //       { data: { pergunta: pergunta } }
-  //     )
-  //     .afterClosed().subscribe(data => {
-  //       if (data && data.pergunta !== null) {
-  //         this.perguntasService.atualizar(data.pergunta, data.id);
-  //       }
-  //     });
-  // }
+  atualizar($event: any, pergunta: Pergunta) {
+    $event.preventDefault();
+    this.dialog
+      .open(
+        PerguntaFormDialogComponent, 
+        { data: { pergunta: pergunta } }
+      )
+      .afterClosed().subscribe(data => {
+        if (data && data.pergunta !== null) {
+          this.perguntasService.atualizar(data.pergunta, data.id);
+        }
+      });
+  }
 
   // remover($event: any, perguntaId: string) {
   //   $event.preventDefault();

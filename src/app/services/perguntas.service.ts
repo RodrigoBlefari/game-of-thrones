@@ -49,16 +49,16 @@ export class PerguntasService {
         'Erro', this.SNACKBAR_DURATION));
   }
 
-//   atualizar(pergunta: Pergunta, perguntaId: string) {
-//     this.afs.doc<Pergunta>(`${this.PERGUNTAS_COLLECTION}/${perguntaId}`)
-//       .update(pergunta)
-//       .then(res => this.snackBar.open(
-//         'Pergunta atualizada com sucesso!', 
-//         'OK', this.SNACKBAR_DURATION))
-//       .catch(err => this.snackBar.open(
-//         'Erro ao atualizar pergunta.', 
-//         'Erro', this.SNACKBAR_DURATION));
-//   }
+  atualizar(pergunta: Pergunta, perguntaId: string) {
+    this.afs.doc<Pergunta>(`${this.PERGUNTAS_COLLECTION}/${perguntaId}`)
+      .update(pergunta)
+      .then(res => this.snackBar.open(
+        'Pergunta atualizada com sucesso!', 
+        'OK', this.SNACKBAR_DURATION))
+      .catch(err => this.snackBar.open(
+        'Erro ao atualizar pergunta.', 
+        'Erro', this.SNACKBAR_DURATION));
+  }
 
 //   remover(perguntaId: string) {
 //     this.afs.doc<Pergunta>(`${this.PERGUNTAS_COLLECTION}/${perguntaId}`)
