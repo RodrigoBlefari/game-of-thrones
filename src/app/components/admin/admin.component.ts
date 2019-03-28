@@ -11,7 +11,7 @@ import { Pergunta } from '../../models';
 import { 
   PerguntaFormDialogComponent, 
   ConfirmarRemoverDialogComponent,
-  // ConfirmarRestauracaoDialogComponent,
+  ConfirmarRestauracaoDialogComponent,
   // JogosFormDialogComponent
 } from './dialogs';
 
@@ -92,15 +92,15 @@ export class AdminComponent implements OnInit {
     });
   }
 
-  // confirmarRestauracaoDados() {
-  //   this.dialog
-  //     .open(ConfirmarRestauracaoDialogComponent)
-  //     .afterClosed().subscribe(resposta => {
-  //       if (resposta) {
-  //         this.perguntasService.restaurarPerguntas();
-  //       }
-  //     });
-  // }
+  confirmarRestauracaoDados() {
+    this.dialog
+      .open(ConfirmarRestauracaoDialogComponent)
+      .afterClosed().subscribe(resposta => {
+        if (resposta) {
+          this.perguntasService.restaurarPerguntas();
+        }
+      });
+  }
 
   // inicializarJogos() {
   //   this.dialog
