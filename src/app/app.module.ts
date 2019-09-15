@@ -9,15 +9,30 @@ import { AngularFireAuthModule } from "angularfire2/auth";
 import { AngularFirestoreModule } from "angularfire2/firestore";
 
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { MatButtonModule, MatIconModule } from "@angular/material";
+import { ReactiveFormsModule } from "@angular/forms";
+import { MatButtonModule,
+         MatIconModule,
+         MatInputModule,
+         MatListModule,
+         MatSnackBarModule,
+         MatTableModule,
+         MatPaginator,
+         MatDialogModule,
+         MatSelectModule,
+         MatTooltipModule,
+         MatSlideToggleModule,
+         MatPaginatorModule
 
-import { LoginComponent } from './components';
+        } from "@angular/material";
 
+import { LoginComponent,PreJogoComponent } from './components';
 import { AppRoutingModule } from './app-routing.module';
+
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    PreJogoComponent
   ],
   imports: [
     BrowserModule,
@@ -25,8 +40,18 @@ import { AppRoutingModule } from './app-routing.module';
     AngularFireAuthModule,
     AngularFirestoreModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     MatButtonModule,
     MatIconModule,
+    MatInputModule,
+    MatListModule,
+    MatSnackBarModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatDialogModule,
+    MatSelectModule,
+    MatTooltipModule,
+    MatSlideToggleModule,
     AppRoutingModule
   ],
   providers: [],
